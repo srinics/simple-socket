@@ -1,3 +1,11 @@
+/*
+ * Author: M1043833 ( Srinivasan Rajendran )
+ * Description: This file contains main funciton to start the server either 
+ * in Windows/Linux environment with TCP Socket based on compilation server will
+ * listern port 8888 with Linux/WinSocket
+ * 
+ * */
+
 #include <iostream>
 #include<cstdio>
 #include<cstring>
