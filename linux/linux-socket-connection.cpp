@@ -4,7 +4,6 @@ Description: This file contains function for getting Windows Create TCP/UDP Sock
 function for closing the socket connection
 */
 
-#include "stdafx.h"
 #include <iostream>
 #include <stdexcept>
 #include "socket-connection.h"
@@ -40,7 +39,7 @@ Function used for closing socket.
 */
 void CloseSocket(int sd){
 	if (sd < 0){
-		throw std::exception("Invalid Socket SD");
+		throw std::runtime_error("Invalid Socket SD");
 	}
 	close(sd);
 }

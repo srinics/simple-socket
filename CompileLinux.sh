@@ -9,6 +9,6 @@ if [ "$op" = "clean" ]; then
 	exit 0;
 fi
 
-g++ -c linux-socket-connection.cpp -o $linux_dir/linux-socket-connection.o --std=c++11 
+g++ -c $linux_dir/linux-socket-connection.cpp -o $linux_dir/linux-socket-connection.o --std=c++11 
 ar cr $linux_dir/liblinuxsocket.a $linux_dir/linux-socket-connection.o
 g++ server.cpp -o $binary_name -L$linux_dir -I$linux_dir -llinuxsocket --std=c++11
